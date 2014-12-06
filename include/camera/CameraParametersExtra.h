@@ -209,9 +209,6 @@ void CameraParameters::setOrientation(int orientation) \
          set("orientation", landscape); \
     } \
 } \
-void CameraParameters::setPostviewSize(int width, int height) \
-{ \
-} \
 void CameraParameters::getSupportedHfrSizes(Vector<Size> &sizes) const \
 { \
     const char *hfrSizesStr = get(KEY_SUPPORTED_HFR_SIZES); \
@@ -469,7 +466,5 @@ struct FPSRange{ \
     int getOrientation() const; \
     void setOrientation(int orientation); \
     void setPreviewFpsRange(int minFPS,int maxFPS); \
-    void setPostviewSize(int x, int y); \
     void getSupportedHfrSizes(Vector<Size> &sizes) const; \
     void getMeteringAreaCenter(int * x, int *y) const; \
-
