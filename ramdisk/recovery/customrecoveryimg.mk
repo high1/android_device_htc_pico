@@ -7,6 +7,7 @@ CL_RST="\033[0m"
 
 
 $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
+        $(recovery_uncompressed_ramdisk) \         
 		$(recovery_ramdisk) \
 		$(recovery_kernel)
 	@echo -e ${PRT_IMG}"----- Compressing recovery ramdisk with lzma ------"${CL_RST}
